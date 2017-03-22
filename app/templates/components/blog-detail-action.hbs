@@ -4,7 +4,10 @@
   </div>
   <div class='panel-body'>
     <p class='author'>By: {{model.author}}</p>
+
+    {{#if (check-image-exists model.image)}}
     <img src={{model.image}} alt={{model.title}} />
+    {{/if}}
     <p class='body'>{{model.body}}</p>
     <p class='date'>{{model.date}}</p>
   </div>

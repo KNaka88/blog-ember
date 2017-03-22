@@ -5,7 +5,10 @@
     </div>
     <div class='panel-body'>
       <p class='author'>By: {{blog.author}}</p>
-      <img src={{blog.image}} alt={{blog.title}} />
+
+      {{#if (check-image-exists blog.image)}}
+        <img src={{blog.image}} alt={{blog.title}} />
+      {{/if}}
       <p class='body'>{{blog.body}}</p>
       <p class='date'>{{blog.date}}</p>
     </div>

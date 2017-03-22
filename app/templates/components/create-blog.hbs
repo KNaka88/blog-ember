@@ -15,10 +15,22 @@
       </div>
       <div class="modal-body">
         <h1>hello</h1>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <form>
+          <label for="author">Author</label>
+          {{input value=author id="author"}}
+          <label for="title">Title</label>
+          {{input value=title id="title"}}
+          <label for="date">Date</label>
+          {{input value=date id="date"}}
+          <label for="image">Image URL</label>
+          {{input value=image id="image"}}
+          <label for="body">Body</label>
+          {{textarea value=body id="body"}}
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" {{action 'newPost'}} data-dismiss="modal">Save</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
