@@ -9,5 +9,22 @@
     <p class='date'>{{model.date}}</p>
   </div>
   <button {{action 'delete' model}}>Delete</button>
-  <button>Edit</button>
+  <button {{action 'showForm'}}>Edit</button>
 </div>
+
+{{#if showForm}}
+  <form class="" action="index.html" method="post">
+    <label for="author">Author</label>
+    {{input value=author id="author"}}
+    <label for="title">Title</label>
+    {{input value=title id="title"}}
+    <label for="date">Date</label>
+    {{input value=date id="date"}}
+    <label for="image">Image URL</label>
+    {{input value=image id="image"}}
+    <label for="body">Body</label>
+    {{textarea value=body id="body"}}
+    <button {{action 'editForm' model}}>Save</button>
+  </form>
+
+{{/if}}

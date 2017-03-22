@@ -3,12 +3,14 @@
   This is a blog.
 </p>
 
+<div class="add-post">
+  {{create-blog}}
+</div>
+
 <div class="blog-preview">
   <ul>
   {{#each model as |blog|}}
     {{blog-tile blog=blog}}
   {{/each}}
   </ul>
-  <!-- {{blog-detail blog=blog destroyBlog="destroyBlog"}} -->
-
 </div>
