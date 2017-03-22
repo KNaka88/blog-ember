@@ -4,6 +4,7 @@
   </div>
   <div class='panel-body'>
     <p class='author'>By: {{model.author}}</p>
+    <p class='category'>{{model.category}}</p>
 
     {{#if (check-image-exists model.image)}}
     <img src={{model.image}} alt={{model.title}} />
@@ -27,6 +28,8 @@
     {{input value=image id="image"}}
     <label for="body">Body</label>
     {{textarea value=body id="body"}}
+    <label for="category">Category</label>
+    {{input value=category id="category"}}
     <button {{action 'editForm' model}}>Save</button>
   </form>
 

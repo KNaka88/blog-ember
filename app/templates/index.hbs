@@ -8,9 +8,11 @@
 </div>
 
 <div class="blog-preview">
-  <ul>
+  <ul class="pagination">
   {{#each model as |blog|}}
     {{blog-tile blog=blog}}
   {{/each}}
   </ul>
 </div>
+<br>
+{{infinity-loader infinityModel=model}}

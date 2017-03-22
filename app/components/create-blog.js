@@ -10,7 +10,6 @@ export default Ember.Component.extend({
         image: this.get('image')? this.get('image') : "",
         body: this.get('body') ?this.get('body') : "",
       };
-      console.log(params);
       this.sendAction('newPost', params);
     }
   }
