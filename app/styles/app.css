@@ -1,0 +1,13 @@
+.blog-preview {
+  height: 500px;
+  /*overflow: hidden;*/
+}
+
+.body {
+  overflow: hidden;
+}
+
+
+img {
+  height: 200px;
+}

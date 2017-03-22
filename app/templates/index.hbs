@@ -1,0 +1,14 @@
+<h1>HOME</h1>
+<p>
+  This is a blog.
+</p>
+
+<div class="blog-preview">
+  <ul>
+  {{#each model as |blog|}}
+    {{blog-tile blog=blog}}
+  {{/each}}
+  </ul>
+  <!-- {{blog-detail blog=blog destroyBlog="destroyBlog"}} -->
+
+</div>

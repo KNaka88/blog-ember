@@ -1,0 +1,13 @@
+{{#link-to 'blog-detail' blog.id}}
+  <div class='panel panel-success'>
+    <div class='panel-heading'>
+      <h3 class='panel-title'>{{blog.title}}</h3>
+    </div>
+    <div class='panel-body'>
+      <p class='author'>By: {{blog.author}}</p>
+      <img src={{blog.image}} alt={{blog.title}} />
+      <p class='body'>{{blog.body}}</p>
+      <p class='date'>{{blog.date}}</p>
+    </div>
+  </div>
+{{/link-to}}
